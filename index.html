@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой первый сайт</title>
+    <style>
+    .png {
+      height: 200px;
+    }
+    .pngg {
+      height: 300px;
+    }
+  </style>
+  </head>
+  <body>
+  <h1>Мой первый сайт</h1>
+
+  <h2>О проекте</h2>
+  <p>Это учебная страница для проверки навыков вёрстки и оптимизации контента. Здесь я тестирую загрузку изображений и структуру текста.</p>
+
+  <h2>Что уже сделано</h2>
+  <ul>
+    <li>Добавлена ленивая загрузка изображений (<code>loading="lazy"</code>).</li>
+    <li>Реализован индикатор «Загрузка…», который исчезает после появления картинки.</li>
+    <li>Текст структурирован заголовками и списком.</li>
+    <li>Убраны повторы и лишние абзацы.</li>
+  </ul>
+
+  <h2>Изображения</h2>
+
+  <div id="loading">Загрузка…</div>
+
+  <img src="1.png" class="png" loading="lazy" alt="Изображение 1" onload="document.getElementById('loading').style.display='none'">
+  <img src="2.png" class="pngg" loading="lazy" alt="Изображение 2">
+
+  <p><a href="https://youtube.com">Перейти на YouTube</a></p>
+  </body>
+</html>
